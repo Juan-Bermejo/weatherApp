@@ -139,11 +139,11 @@ class App extends Component {
 
                     <div className="date">
 
-                        <h3>{this.state.location.localtime.slice(8,11)}</h3>
+                        <h4>{this.state.location.localtime.slice(8,11)}</h4>
 
-                        <h3>{this.dates.meses[this.state.location.localtime.slice(5,7) - 1]}</h3>
+                        <h4>{this.dates.meses[this.state.location.localtime.slice(5,7) - 1]}</h4>
                     
-                        <h3>{this.state.location.localtime.slice(0,4)}</h3>
+                        <h4>{this.state.location.localtime.slice(0,4)}</h4>
                         
                     </div>
 
@@ -159,6 +159,7 @@ class App extends Component {
 
                 </div>
             </div>
+
         )
     }
 }
