@@ -1,0 +1,22 @@
+
+code 		condition
+
+1000 		soleado
+1003 		parcialmente nublado
+1006		nublado
+1009		cielo cubierto
+1030		neblina
+1063		lluvia moderada a intervalos
+1066		nieve moderada a intervalos en las aproximaciones
+1069		aguanieve moderada 
+1072		llovizna helada
+1087		cielos tormentosos
+1114		chubascos de nieve
+1117		ventisca
+1135		niebla moderada
+1147		niebla helada
+1150		llovizna a intervalos
+1153		llovizna
+1168		lluvia helada
+1171		fuerte llovizna
+1180		
