@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './index.css';
+import './styles/mainTemp.css';
 
 import arg from './static/argentina.png';
 import usa from './static/united-states.png';
@@ -81,7 +81,9 @@ class App extends Component {
         var minutes = actualDate.getMinutes();
         var seconds = actualDate.getSeconds();
 
-        console.log(hour);
+        
+
+        console.log(actualDate);
 
         
 
@@ -103,7 +105,7 @@ class App extends Component {
 
                     <div className="title">
 
-                        <h2>App del Clima</h2>
+                        <h3>C/F</h3>
 
                     </div>
 
@@ -121,7 +123,7 @@ class App extends Component {
 
                     <div className="location">
                         
-                        <h3>{this.state.location.name},  {this.state.location.country}</h3>
+                        <h3>{this.state.location.country},  {this.state.location.name}</h3>
                         
                     </div>
 
@@ -131,11 +133,17 @@ class App extends Component {
 
                     <div className="temperature">
 
-                        <img src="https://v5i.tutiempo.net/wi/01/90/2n.png"/>
+                        <img src="https://v5i.tutiempo.net/wi/04/90/2n.png"/>
                     
                         <h1 onClick={this.changeValue}>{this.state.current_temp.temp_c}°</h1>
-                
+
                     </div> 
+
+                    <div className="condition">
+
+                        <h3>{this.state.current_temp.condition.text}</h3>
+
+                    </div>
 
                     <div className="date">
 
@@ -151,7 +159,6 @@ class App extends Component {
                 </div>
 
                     <h3>{this.state.current_temp.temp_f}</h3>
-                    <h3>{this.state.current_temp.condition.text}</h3>
                     <h3>{this.state.current_temp.condition.code}</h3>     
 
                 <div>

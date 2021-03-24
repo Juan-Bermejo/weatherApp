@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');;
 
-body {
+html, body {
+  height: 100%;
   margin: 0;
   font-family: 'Spartan', sanas-serif;
   color: whitesmoke;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  background: rgb(83,120,149);
-background: linear-gradient(220deg, rgba(83,120,149,1) 1%, rgba(9,32,63,1) 100%);
+  background: rgb(29,38,113);
+  background: linear-gradient(180deg, rgba(29,38,113,1) 1%, rgba(195,55,100,1) 100%);
 }
 
 .general {
@@ -91,4 +91,14 @@ background: linear-gradient(220deg, rgba(83,120,149,1) 1%, rgba(9,32,63,1) 100%)
 .temperature h1 {
   margin-top: 0.9em;
   font-size: 4em;
+}
+
+.condition {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.condition h3 {
+  margin: -2em;
 }
