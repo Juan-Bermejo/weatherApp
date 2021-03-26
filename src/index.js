@@ -1,7 +1,14 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import App from './mainTemp.js';
+import ApiData from './ApiRequest';
+import App from './App';
 
+render(
+    <React.StrictMode>
 
-render(<App/>, document.getElementById('app'));
+        <ApiData/>
+
+    </React.StrictMode>,
+    document.getElementById('root')
+);
